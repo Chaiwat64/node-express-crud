@@ -25,7 +25,7 @@ app.get('/users', function (req, res, next) {
     );
   })
 
-  
+
   app.get('/users/:id', function (req, res, next) {
     const id = req.params.id;
     connection.query(
