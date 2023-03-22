@@ -2,11 +2,7 @@ var express = require('express')
 var cors = require('cors')
 const mysql = require('mysql2');
 
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  database: 'mydb'
-});
+const connection = mysql.createConnection(`mysql://jz46153ynj2r4ajdig3k:pscale_pw_6MmMGwQdRSdtLPEgBw1vl0ELkM8XGkoDf6epeDVbkex@us-east.connect.psdb.cloud/testlab?ssl={"rejectUnauthorized":true}`);
 
 var app = express()
 app.use(cors())
